@@ -133,10 +133,21 @@
  * 异常分为两大类：检查异常：必须处理的异常 和 运行异常：代码跑起来的时候才出现的异常
  * 
  * 
- * 检查异常是指：这个操作可能会出现问题，必须提前想好对策，不然编译不通过，比如读写一个文件，那这个文件有没有可能不存在？不存在的时候怎么办？
+ * 检查异常是指：这个操作可能会出现问题，必须提前想好对策，不然编译不通过，
+ * 比如读写一个文件，那这个文件有没有可能不存在？不存在的时候怎么办？IOException
+ * 比如数据库操作异常		SQLException
+ * 比如找不到类 		 	ClassNotFoundException
  * 
+ * 运行异常：通常是由逻辑错误和代码缺陷引起的
  * 
- * 
+ * 常见的
+ * 空指针		NullPointException
+ * 数组越界		ArrayIndexOutOfBoundsException
+ * 除0异常		ArithmeticException
+ * 类型转换异常	CalssCastException
+ * 	对于非受检异常：重点应放在代码规范上。比如在操作数组前检查长度，在操作对象前判断非空，而不是到处写 try-catch。
+ *
+ *	对于受检异常：这通常是 Java 在提醒你“这里可能会出问题，请给出备用方案”。例如：如果文件打不开，你是要提示用户重新选择路径，还是记录日志？必须写出try-catch
  * 
  */
 
@@ -192,7 +203,8 @@
 //}
 //
 
-
+/*
+ * 
 package day_03;
 
 import java.util.InputMismatchException;
@@ -223,16 +235,81 @@ public class Main {
 			System.out.print("代码结束");
 		}
 		
-		
-		
-		
+	}
 
-	
+}
+
+*/
+
+
+
+
+
+
+
+
+
+package day_03;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		try {
+		int age = input.nextInt();
+		int age1 = input.nextInt();
+		
+		System.out.println(age/age1);
+		
+		}catch(InputMismatchException e) {
+			
+			System.out.println("不要输入小数");
+			
+		}catch(ArithmeticException e) {
+			
+			System.out.println("除0错误");
+			
+		}catch(Exception e) {
+			
+			System.out.println("程序未知错误");
+			
+		}finally {
+			
+			System.out.println("程序结束");
+			
+		}
 		
 		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

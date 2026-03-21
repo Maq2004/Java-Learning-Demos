@@ -21,9 +21,4 @@
 - 自定义异常雏形（AgeException），throw + catch + getMessage  
 - 明白了throw是真扔炸弹，throws是提前说“我这可能有炸弹”
 
-3. MySQL入门
-- 建库school + students表（带CHECK、ENUM、TIMESTAMP、COMMENT）  
-- INSERT 5条数据 + 3种查询（全表、条件排序、COUNT/AVG）  
-- 脚本规范：IF NOT EXISTS、DROP IF EXISTS、utf8mb4、ENGINE=InnoDB  
-- 已经push到Mysql_Learning_Demos仓库
 

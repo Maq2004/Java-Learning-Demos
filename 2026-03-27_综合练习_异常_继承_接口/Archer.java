@@ -1,0 +1,100 @@
+package day_18_勇者斗恶龙;
+
+import java.util.Random;
+
+public class Archer extends Character_V3 implements FightAble {
+
+	//当前英雄攻击别人
+	@Override
+	public void performAttack(FightAble target) {
+		// TODO 自动生成的方法存根
+		Random random = new Random();
+		boolean random1 =  random.nextBoolean();
+		
+		if(random1) {
+			System.out.println(this.name+"会心一击！");
+			target.takeDamage(this.Attack * ((random.nextDouble() +0.50)) * 2.0); // 50% 几率暴击
+			
+		}else {
+			
+			target.takeDamage(this.Attack * (random.nextDouble()+0.50));
+			
+		}
+		 
+		
+		
+		
+	}
+	//当前英雄职业
+	@Override
+	public String getJob() {
+		// TODO 自动生成的方法存根
+		return "弓箭手";
+	}
+	//当前英雄血量
+	@Override
+	public double getHp() {
+		// TODO 自动生成的方法存根
+		return this.Hp;
+	}
+	//当前英雄受到伤害
+	@Override
+	public void takeDamage(double damage) {
+		// TODO 自动生成的方法存根
+		
+		super.setHp( this.Hp - damage );
+		
+		
+		
+		
+	}
+	
+	
+	
+	public Archer( String name, double Hp, double Attack , int Speed ) {
+		
+		super.setHp(Hp);
+		this.name = name;
+		
+		super.setAttack(Attack);
+		
+		super.setSpeed(Speed);
+		
+	}
+	
+	
+	
+	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+		
+	public double getAttack() {
+		return Attack;
+	}
+
+
+
+	public int getSpeed() {
+		return this.Speed;
+	}
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+}

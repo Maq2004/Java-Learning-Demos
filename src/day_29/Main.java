@@ -1,5 +1,5 @@
 /*
-package day_26;
+package day_29;
 import java.io.*;
 public class Main {
 	public static void main( String[] args ) {
@@ -59,7 +59,7 @@ public class Main {
 
 
 /*
-package day_26;
+package day_29;
 import java.io.*;
 public class Main {
 	public static void main( String[] args ) {
@@ -176,7 +176,7 @@ public class Main {
 	}
 }
 */
-package day_26;
+package day_29;
 import java.io.*;
 import java.util.Scanner;
 public class Main {

@@ -42,7 +42,7 @@ public class Main {
 		
 		cake.gitCake();
 		
-		
+		input.close();
 		
 		
 		

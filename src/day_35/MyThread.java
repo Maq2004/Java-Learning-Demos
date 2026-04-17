@@ -1,4 +1,4 @@
-package day_31;
+package day_35;
 
 public class MyThread extends Thread {
 

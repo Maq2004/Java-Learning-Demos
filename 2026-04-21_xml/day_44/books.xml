@@ -1,0 +1,8 @@
+<bookstore>
+    <book id="101" category="IT">
+        <title>Java 入门</title>
+    </book>
+    <book id="102" category="小说">
+        <title>活着</title>
+    </book>
+</bookstore>

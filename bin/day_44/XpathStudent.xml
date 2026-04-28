@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Country name="中国">
+
+
+    <Province name="江苏省">
+        <City name="南京市">
+            <District name="玄武区">
+                <School type="大学" name="东南大学">
+                    <Department name="计算机学院">
+                        <Student id="SEU001">
+                            <Name>林冲</Name>
+                            <Age>21</Age>
+                        </Student>
+                        <Student id="SEU002">
+                            <Name>武松</Name>
+                            <Age>22</Age>
+                        </Student>
+                    </Department>
+                </School>
+            </District>
+        </City>
+    </Province>
+    
+    
+    <Province name="广东省">
+        <City name="深圳市">
+            <District name="南山区">
+                <School type="大学" name="深圳大学">
+                    <Department name="软件学院">
+                        <Student id="SZU999">
+                            <Name>马化腾</Name>
+                            <Age>50</Age>
+                        </Student>
+                    </Department>
+                </School>
+                <School type="高中" name="南山中学">
+                    <Class name="高三1班">
+                        <Student id="NS001">
+                            <Name>张三</Name>
+                            <Age>18</Age>
+                        </Student>
+                        <Student id="NS002">
+                            <Name>李四</Name>
+                            <Age>17</Age>
+                        </Student>
+                    </Class>
+                </School>
+            </District>
+        </City>
+    </Province>
+    
+    
+</Country>

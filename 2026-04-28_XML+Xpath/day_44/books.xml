@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><bookstore>
+
+    <book id="101">
+        <title>Java 入门</title>
+        <price>68</price>
+        <author>李老头</author>
+    </book>
+    
+    <book id="102">
+        <title>活着</title>
+        <price>78</price>
+        <author>王老头</author>
+    </book>
+    
+
+	
+</bookstore>

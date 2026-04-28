@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Students> 
+  <student 学号="202522430201"> 
+    <name>Maaa</name>  
+    <Age>15</Age> 
+  </student>  
+  <student 学号="202522430199"> 
+    <name>c</name>  
+    <Age>6</Age> 
+  </student>  
+  <student 学号="202522430198"> 
+    <name>d</name>  
+    <Age>20</Age> 
+  </student>  
+  <student 学号="202522430197"> 
+    <name>f</name>  
+    <Age>10</Age> 
+  </student>  
+  <student 学号="202522430196"> 
+    <name>e</name>  
+    <Age>17</Age> 
+  </student> 
+</Students>
